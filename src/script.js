@@ -6,7 +6,10 @@ function main() {
 
   const world = new World(container)
 
-  world.render()
+  const btn = document.querySelector("#btnClick")
+  btn.addEventListener("click", () => {
+    world.render()
+  })
 }
 
 main()
